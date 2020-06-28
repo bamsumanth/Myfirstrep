@@ -1,0 +1,15 @@
+commands
+
+git init 
+git remote origin master url(github)
+git add file (to add to index)
+git commit -m "message" (to commit) 
+git push file
+git config user.email "mailid"
+git status
+git log
+git branch branchname
+git checkout branchname (to change branch)
+git merge branch(name) (should be in branch where we want to add merge files from branch(which files we want to merge))
+ssh -T git@github.com
+git clone url(github)
