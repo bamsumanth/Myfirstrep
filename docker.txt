@@ -1,0 +1,7 @@
+
+
+yum install docker # to install docker
+service docker start # to start docker
+docker search ubuntu # to search docker image of ubuntu
+docker install ubuntu # to install docker image of ubuntu
+
