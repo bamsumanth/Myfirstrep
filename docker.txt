@@ -3,5 +3,10 @@
 yum install docker # to install docker
 service docker start # to start docker
 docker search ubuntu # to search docker image of ubuntu
-docker install ubuntu # to install docker image of ubuntu
-
+docker pull ubuntu # to download docker image of ubuntu
+docker run -it -d ubuntu # to install docker container from docker image
+docker ps # to show container id
+docker exec -it containerid bash # to log in to docker container 
+docker stop container id # to stop docker container
+docker rm container id # to remove docker container 
+docker rmi ubuntu # to remove docker image 
