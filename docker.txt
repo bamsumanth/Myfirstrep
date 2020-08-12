@@ -5,8 +5,21 @@ service docker start # to start docker
 docker search ubuntu # to search docker image of ubuntu
 docker pull ubuntu # to download docker image of ubuntu
 docker run -it -d ubuntu # to install docker container from docker image
-docker ps # to show container id
+docker run -it ubuntu # to install and login to container from docker image
+docker ps # to show all running containers 
+docker ps -a # to show all runnning and stopped containers
 docker exec -it containerid bash # to log in to docker container 
-docker stop container id # to stop docker container
-docker rm container id # to remove docker container 
+docker stop containerid # to stop docker container
+docker kill containerid # to kill docker container
+docker rm containerid # to remove docker container 
 docker rmi ubuntu # to remove docker image 
+docker rmi -f ubuntu # to force fully remove image
+docker login # to log in to docker hub
+docker build -t name path # to build docker image from docker file 
+docker tag imagename newimagename # to rename and build a new image 
+docker push newimagename # to upload docker image in to dockerhub
+docker commit containerid newimagename # to create a docker image from existing container
+docker export --output="tarfilename" imageid # to convert dockerfile in tar format for sharing 
+docker import path # to get docker image from a tar file 
+
+
