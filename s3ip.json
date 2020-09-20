@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Id": "VPCe and SourceIP",
+    "Statement": [
+        {
+            "Sid": "SourceIP",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::sumanthpoladibucket",
+                "arn:aws:s3:::sumanthpoladibucket/*"
+            ],
+            "Condition": {
+                "NotIpAddress": {
+                    "aws:SourceIp": "157.47.115.51/32"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+import json
+import boto3
+client = boto3.client('sns')
+
+def lambda_handler(event, context):
+    topic_arn = 'arn:aws:sns:us-east-2:355330023528:sns_s3'
+    message = 'doc uploaded'
+    client.publish(TopicArn=topic_arn,Message=message)
+       
+
+
+
+import json
+import boto3
+client = boto3.client('ses')
+def lambda_handler(event, context):
+    source_arn = 'arn:aws:ses:us-east-2:355330023528:identity/p.sumanth23@gmail.com'
+    source = 'p.sumanth23@gmail.com'
+    destination = {'ToAddresses':['p.sumanth23@gmail.com']}
+    message = {'Subject':{'Data':'object'},'Body':{'Text':{'Data':'mail sent'}}}
+    client.send_email(Source=source,Destination=destination,Message=message,SourceArn=source_arn)
+	
+	
+aws s3 presign s3objectpath --expires-in 30 --region us-east-2
+
+curl --request PUT --upload-file text.py 
+
+import boto3
+s3 = boto3.client('s3')
+
+bucket = raw_input("Enter your Bucket Name: ")
+key= raw_input("Enter your desired filename/key for this upload: ")
+
+print (" Generating pre-signed url...")
+
+print(s3.generate_presigned_url('put_object', Params={'Bucket':bucket,'Key':key}, ExpiresIn=3600, HttpMethod='PUT'))
+
+curl -O https://bootstrap.pypa.io/get-pip.py
+
+python get-pip.py --user
+
+pip install boto3 --user

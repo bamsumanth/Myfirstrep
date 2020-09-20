@@ -1,0 +1,31 @@
+--------------------
+Date: 29:8:2020
+Time: 0:0
+Phone number: +919603112554
+Message: hiii
+--------------------
+Date: 30:8:2020
+Time: 0:0
+Phone number: +919603112554
+Message: hiii
+--------------------
+Date: 30:8:2020
+Time: 19:0
+Phone number: +919603112554
+Message: hiii
+--------------------
+Date: 30:8:2020
+Time: 19:10
+Phone number: +919381912685
+Message: hiii
+--------------------
+Date: 30:8:2020
+Time: 19:18
+Phone number: +919010438383
+Message: Message sent via pywhatkit
+--------------------
+Date: 12:9:2020
+Time: 19:18
+Phone number: +919010438383
+Message: Message sent via pywhatkit
+--------------------
